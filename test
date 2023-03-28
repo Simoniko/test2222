@@ -903,14 +903,14 @@ if ct == 2 and _G.Pkey ~= nil and _G.Pkey ~= "" and c == true then
 		            end
                 end
 	        until not keyesp
-	    else
-            for i,v in pairs(obtainable.KeyObtain) do
-                pcall(function() 
-                    v.Parent.Outline:Destroy()
-                end) 
+	        else
+                for i,v in pairs(obtainable.KeyObtain) do
+                    pcall(function() 
+                        v.Parent.Outline:Destroy()
+                    end) 
+                end
             end
-        end
-    end)
+        end)
         
         Scanner:NewToggle("Stars disappear", "Should stars disappear after picking up books?", function(v)
             _G.UpdateStars = v
