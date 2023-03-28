@@ -2,7 +2,6 @@
 
 local c = false
 
-
 local ct
 local key = loadstring(game:HttpGet("https://raw.githubusercontent.com/Simoniko/de213/main/st"))()
 local input = _G.Pkey
