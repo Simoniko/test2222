@@ -1,4 +1,3 @@
---loadstring(game:HttpGet("https://raw.githubusercontent.com/Simoniko/test9832/main/str"))()
 local c = false
 local e
 local ct
@@ -892,26 +891,26 @@ if ct == 2 and _G.Pkey ~= nil and _G.Pkey ~= "" and c == true then
 	end)
 	
 	
-        Key:NewToggle("Key Aura", "Automatically picks up keys.", function(v)
-            keyesp = v
+    Key:NewToggle("Key Aura", "Automatically picks up keys.", function(v)
+        keyesp = v
 	    if keyesp then
 	        repeat task.wait(.25)
-		    for i,v in pairs(obtainable.KeyObtain) do
-		        if not v.pArent:FindFirstChild("Outline") then
-			    if keyesp then
-			        outline(v.Parent)
-			    end
-		        end
-		    end)
-	        end
-	    until not keyesp
+		        for i,v in pairs(obtainable.KeyObtain) do
+		            if not v.pArent:FindFirstChild("Outline") then
+			            if keyesp then
+			                outline(v.Parent)
+			            end
+		            end
+                end
+	        until not keyesp
 	    else
-	    for i,v in pairs(obtainable.KeyObtain) do
-	        pcall(function() 
-		    v.Parent.Outline:Destroy()
-		end) 
-	    end
-        end)
+            for i,v in pairs(obtainable.KeyObtain) do
+                pcall(function() 
+                    v.Parent.Outline:Destroy()
+                end) 
+            end
+        end
+    end)
         
         Scanner:NewToggle("Stars disappear", "Should stars disappear after picking up books?", function(v)
             _G.UpdateStars = v
