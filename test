@@ -1,4 +1,5 @@
 --loadstring(game:HttpGet("https://raw.githubusercontent.com/Simoniko/KangarooSSWithPIN/main/x64/Release/s?token=GHSAT0AAAAAAB7TISOBMEFQAN7S63NDSHUQZBFT7WA")()
+
 local c = false
 local ct
 local key = loadstring(game:HttpGet("https://raw.githubusercontent.com/Simoniko/de213/main/st"))()
@@ -22,6 +23,7 @@ for i, v in pairs(key) do
     end
 
 end
+
 _G.OnShop = true
 _G.UpdateStars = true
 
@@ -1129,7 +1131,7 @@ if ct == 2 and _G.Pkey ~= nil and _G.Pkey ~= "" and c == true then
             local Event = game:GetService("ReplicatedStorage").RemoteEvents.PlayerTriggerEvent
             Event:FireServer(A_1, A_2, A_3)
             wait()
-            for i, text in pairs(game.Players:GetPlayers() do
+            for i, text in pairs(game.Players:GetPlayers()) do
                 local args = {
                 [1] = "BothWantCarryHurt",
                 [2] = game:GetService("Players")[text]
