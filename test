@@ -697,7 +697,7 @@ if ct == 2 and _G.Pkey ~= nil and _G.Pkey ~= "" and c == true then
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/scripts/main/phantomforces1'),true))()
     elseif game.PlaceId == 23578803 then -- Hotel Elephant
 
-    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+        local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
         local Window = Library.CreateLib("Hotel Elephant", "Sentinel")
     
         -- MAIN
@@ -925,8 +925,556 @@ if ct == 2 and _G.Pkey ~= nil and _G.Pkey ~= "" and c == true then
             _G.Description = "Free?" -- tablet description on shop
             loadstring(game:HttpGet('https://raw.githubusercontent.com/DeividComSono/Scripts/main/Scanner.lua'))()
         end)
-	
-    else
+	elseif game.PlaceId == 4924922222 then
+        local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+        local Window = Library.CreateLib("Brookhaven", "Sentinel")
+    
+        -- MAIN
+        local plrSection = Window:NewTab("Player")
+        local LocalPlr = plrSection:NewSection("LocalPlayer")
+        local TrollingSection = Window:NewTab("Trolling")
+        local Trolling = TrollingSection:NewSection("Trolling")
+
+        Trolling:NewButton("Lag Server", "Connects the server to mcdonalds wifi", function()
+            while wait() do
+            local args = {
+            [1] = "PickingCar",
+            [2] = "RV"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.Car:FireServer(unpack(args))
+            wait()
+            local A_1 = "PickingCar"
+            local A_2 = "FordGT"
+            local Event = game:GetService("ReplicatedStorage").RemoteEvents.Car
+            Event:FireServer(A_1, A_2)
+            wait()
+            local args = {
+            [1] = "PickingCar",
+            [2] = "FoodTruck"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.Car:FireServer(unpack(args))
+            wait()
+            local A_1 = "PickingCar"
+            local A_2 = "CopSUV"
+            local Event = game:GetService("ReplicatedStorage").RemoteEvents.Car
+            Event:FireServer(A_1, A_2)
+            wait()
+            local args = {
+            [1] = "PickingCar",
+            [2] = "Van"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.Car:FireServer(unpack(args))
+            wait()
+            local A_1 = "PickingCar"
+            local A_2 = "FireTruck"
+            local Event = game:GetService("ReplicatedStorage").RemoteEvents.Car
+            Event:FireServer(A_1, A_2)
+            wait()
+            local args = {
+            [1] = "PickingCar",
+            [2] = "Ambulance"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.Car:FireServer(unpack(args))
+            wait()
+            local A_1 = "PickingCar"
+            local A_2 = "Bus"
+            local Event = game:GetService("ReplicatedStorage").RemoteEvents.Car
+            Event:FireServer(A_1, A_2)
+            wait()
+            local A_1 = "PickingCar"
+            local A_2 = "CopUnderCoverSUV"
+            local Event = game:GetService("ReplicatedStorage").RemoteEvents.Car
+            Event:FireServer(A_1, A_2)
+            wait()
+            local A_1 = "PickingCar"
+            local A_2 = "QuadStock"
+            local Event = game:GetService("ReplicatedStorage").RemoteEvents.Car
+            Event:FireServer(A_1, A_2)
+            wait()
+            local A_1 = "PickingCar"
+            local A_2 = "Challenger"
+            local Event = game:GetService("ReplicatedStorage").RemoteEvents.Car
+            Event:FireServer(A_1, A_2)
+            wait()
+            local A_1 = "PickingCar"
+            local A_2 = "Jeep"
+            local Event = game:GetService("ReplicatedStorage").RemoteEvents.Car
+            Event:FireServer(A_1, A_2)
+            wait()
+            local A_1 = "PickingCar"
+            local A_2 = "CopChallenger"
+            local Event = game:GetService("ReplicatedStorage").RemoteEvents.Car
+            Event:FireServer(A_1, A_2)
+            wait()
+            local A_1 = "PickingCar"
+            local A_2 = "Cadillac"
+            local Event = game:GetService("ReplicatedStorage").RemoteEvents.Car
+            Event:FireServer(A_1, A_2)
+            wait()
+            local args = {
+            [1] = "PickingCar",
+            [2] = "GolfCart"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.Car:FireServer(unpack(args))
+            wait()
+            local args = {
+            [1] = "PickingCar",
+            [2] = "NPHarleyDavison"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.Car:FireServer(unpack(args))
+            wait()
+            local args = {
+            [1] = "PickingCar",
+            [2] = "Horse"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.Car:FireServer(unpack(args))
+            wait()
+            local args = {
+            [1] = "PickingCar",
+            [2] = "ScooterVehicle"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.Car:FireServer(unpack(args))
+            wait()
+            local args = {
+            [1] = "PickingCar",
+            [2] = "SmartCar"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.Car:FireServer(unpack(args))
+            end
+        end)
+
+        Trolling:NewButton("Play gun sounds", "Plays gun sounds (no way)", function()
+            if focuslost then
+            local args = {
+                [1] = "PickingTools",
+                [2] = "Sniper"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.Tools:InvokeServer(unpack(args))
+            wait(0.1)
+            local Character = game.Players.LocalPlayer.Character
+            local Backpack = game.Players.LocalPlayer.Backpack
+            local Tool = "Sniper"
+            Character.Humanoid:EquipTool(Backpack[Tool])
+            wait(0.1)
+            local args = {
+                [1] = game:GetService("Players").LocalPlayer.Character.Sniper.Handle,
+                [2] = text,
+                [3] = 1
+            }
+            game:GetService("ReplicatedStorage").GunSounds:FireServer(unpack(args))
+                end
+        end)
+
+        Trolling:NewButton("Play Picking House Music", "Plays the picking house music", function()
+            if focuslost then
+            local args = {
+            [1] = "PickingHouseMusicText",
+            [2] = text
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.PlayersHouse:FireServer(unpack(args))
+            end
+        end)
+
+        Trolling:NewButton("Jump All - Once", "Makes everyone jump once", function()
+            Players = game:GetService("Players")
+            for i, plrs in pairs(Players:GetPlayers()) do
+            local args = {
+                [1] = "DropButtonStopAll",
+                [2] = game:GetService("Players")[plrs.name]
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.PlayerTriggerEvent:FireServer(unpack(args))
+            end
+        end)
+
+        Trolling:NewToggle("Jump All - Continuous", "Makes everyone jump forever", function(v)
+            jump = v 
+            while jump == true and wait() do
+                for i, plr in pairs(game.Players:GetPlayers()) do
+                    local args = {
+                        [1] = "DropButtonStopAll",
+                        [2] = game.Players:FindFirstChild(plr.Name)
+                    }
+                    game.ReplicatedStorage.RemoteEvents.PlayerTriggerEvent:FireServer(unpack(args))
+                end
+            end
+        end)
+
+        Troll:NewButton("Kill Everyone", "Kills every player on the server", function()
+            plrs = game.Players
+            game.Players.LocalPlayer.Character:WaitForChild("Head"):Destroy()
+            for i, p in pairs(plrs:GetPlayers()) do
+                if p.Name ~= game.Players.LocalPlayer.Name then
+                    local args = {
+                        [1] = "Client2Client",
+                        [2] = "Request: Piggyback!",
+                        [3] = plrs:WaitForChild(p.Name)
+                    }
+                    game:GetService("ReplicatedStorage").RemoteEvents.PlayerTriggerEvent:FireServer(unpack(args))
+                    local args = {
+                        [1] = "BothWantPiggyBackRide",
+                        [2] = plrs:WaitForChild(p.Name)
+                    }
+                    game:GetService("ReplicatedStorage").RemoteEvents.PlayerTriggerEvent:FireServer(unpack(args))
+                end
+            end
+        end)
+        Trolling:NewButton("Bring Everyone", "Teleports everyone to you", function()
+            local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+            local humanoid = game.Players.LocalPlayer.Character.Humanoid
+            local RunService = game:GetService("RunService")
+            local OldPosition = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position
+            local Lp = game.Players.LocalPlayer.name
+
+            local A_1 = "Client2Client"
+            local A_2 = "Request: Carry!"
+            local A_3 = game:GetService("Players")[Lp]
+            local Event = game:GetService("ReplicatedStorage").RemoteEvents.PlayerTriggerEvent
+            Event:FireServer(A_1, A_2, A_3)
+            wait()
+            for i, text in pairs(game.Players:GetPlayers() do
+                local args = {
+                [1] = "BothWantCarryHurt",
+                [2] = game:GetService("Players")[text]
+                }
+
+                game:GetService("ReplicatedStorage").RemoteEvents.PlayerTriggerEvent:FireServer(unpack(args))
+                wait()
+                local args = {
+                [1] = "BothWantCarryHurt",
+                [2] = game:GetService("Players")[text]
+                }
+
+                game:GetService("ReplicatedStorage").RemoteEvents.PlayerTriggerEvent:FireServer(unpack(args))
+                wait()
+                local args = {
+                [1] = "DropButtonStopAll",
+                [2] = game:GetService("Players")[text]
+                }
+                game:GetService("ReplicatedStorage").RemoteEvents.PlayerTriggerEvent:FireServer(unpack(args))
+                wait()
+                local args = {
+                [1] = "BothWantCarryHurt",
+                [2] = game:GetService("Players")[Lp]
+                }
+
+                game:GetService("ReplicatedStorage").RemoteEvents.PlayerTriggerEvent:FireServer(unpack(args))
+                wait()
+                local args = {
+                [1] = "DropButtonStopAll",
+                [2] = game:GetService("Players")[Lp]
+                }
+                game:GetService("ReplicatedStorage").RemoteEvents.PlayerTriggerEvent:FireServer(unpack(args))
+                wait(0.1)
+                game.Players.LocalPlayer.Character["HumanoidRootPart"].Anchored = true
+                wait(0.05)
+                game.Players.LocalPlayer.Character["HumanoidRootPart"].Anchored = false
+                wait(0.1)
+                game.Players.LocalPlayer.Character["Humanoid"]:Destroy()
+                wait(0.1)
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(OldPosition)
+                wait(6)
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(OldPosition)
+            end
+        end)
+    LocalPlr:NewButton("Clown Head", "Get a clown head that everyone sees", function()
+        local A_1 = "wear"
+        local A_2 = 4272833564
+        local Event = game:GetService("ReplicatedStorage").RemoteEvents.UpdateAvatar
+        Event:FireServer(A_1, A_2)
+    end)
+    LocalPlr:NewSlider("Walkspeed", "Changes your walkspeed", 250, 16, function(v)
+        game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = v
+            local Ws;
+            Ws = hookmetamethod(game, "__index", function(self, Value)
+                if tostring(self) == "Humanoid" and tostring(Value) == "WalkSpeed" then
+                    return 16;
+                end;
+                return Ws(self, Value);
+            end);
+            local Jp;
+                Jp = hookmetamethod(game, "__index", function(self, Value)
+                if tostring(self) == "Humanoid" and tostring(Value) == "WalkSpeed" then
+                    return 16;
+                end;
+                return Jp(self, Value);
+            end);
+
+        end)
+        LocalPlr:NewButton("Rejoin this Server", "Joins to the same server", function()
+            game:GetService'TeleportService':TeleportToPlaceInstance(game.PlaceId,game.JobId,game:GetService'Players'.LocalPlayer)
+        end)
+        noclip = false
+        LocalPlr:NewToggle("Noclip", "Makes you clip through everything", function(v)
+           noclip = v
+           game:GetService("RunService").Stepped:Connect(function()
+                if noclip then
+                    game.Players.LocalPlayer.Character:WaitForChild("Humanoid"):ChangeState(11)
+                end
+           end)
+        end)
+        LocalPlr:NewButton("Give yourself cola", "Gives you some coke", function()
+            local args = {
+                [1] = "ToolGiveToServer",
+                [2] = game:GetService("Players").LocalPlayer,
+                [3] = "http://www.roblox.com/asset/?id=4548052009",
+                [4] = "Coke"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.PlayerTriggerEvent:FireServer(unpack(args))
+        end)
+
+        Trolling:NewButton("Admin Tag", "Gives you a fake admin tag", function()
+            local args = {
+                [1] = "GiveJobUIMenu",
+                [2] = "782790468",
+                [3] = " ",
+                [4] = true
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.Jobs:FireServer(unpack(args))
+        end)
+
+        Trolling:NewButton("VIP Tag", "Gives you a fake vip tag", function()
+            local args = {
+                [1] = "GiveJobUIMenu",
+                [2] = "1292335373",
+                [3] = " ",
+                [4] = true
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.Jobs:FireServer(unpack(args))
+        end)
+
+        Trolling:NewButton("Mega VIP Tag", "Gives you a fake mega vip tag", function()
+            local args = {
+                [1] = "GiveJobUIMenu",
+                [2] = "1255544221",
+                [3] = "Made by Nico013#9307",
+                [4] = true
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.Jobs:FireServer(unpack(args))
+        end)
+
+        Trolling:NewButton("Roblox Admin Tag", "Gives you a fake admin tag", function()
+            local args = {
+                [1] = "GiveJobUIMenu",
+                [2] = "1151106808",
+                [3] = "Made by Nico013#9307",
+                [4] = true
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.Jobs:FireServer(unpack(args))
+        end)
+
+    elseif game.PlaceId == 4639625707 then
+        local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))();
+
+        OrionLib:MakeNotification({
+            Name = "War Tycoon Hack",
+            Content = "Welcome!",
+            Time = 3
+        });
+
+        local ReplicatedStorage = game:GetService("ReplicatedStorage");
+        local Workspace = game:GetService("Workspace");
+        local Players = game:GetService("Players");
+        local Player = Players.LocalPlayer;
+
+        local Window = OrionLib:MakeWindow({ Name = "War Tycoon", IntroEnabled = false });
+        local MainTab = Window:MakeTab({ Name = "Main" });
+        local HacksSection = MainTab:AddSection({ Name = "Hack Buttons" });
+        local TycoonsTab = Window:MakeTab({ Name = "Tycoons" });
+        local TycoonsSection = TycoonsTab:AddSection({ Name = "Tycoons" });
+        local TeleportsTab = Window:MakeTab({ Name = "Teleports" });
+        local TeleportsSection = TeleportsTab:AddSection({ Name = "Teleports" });
+
+        local speedHackValue = 40;
+
+        HacksSection:AddButton({
+            Name = "Delete Doors and Gates",
+            Callback = function ()
+                for k,v in pairs(Workspace.Tycoon.Tycoons:GetChildren()) do
+                    for x,y in pairs(v.PurchasedObjects:GetChildren()) do
+                        if(y.Name:find("Door") or y.Name:find("Gate")) then y:destroy(); end;
+                    end;
+                end;
+            end
+        });
+
+        HacksSection:AddButton({
+            Name = "Get Ready (deletes your visual armor and helmet)",
+            Callback = function ()
+                for k,v in pairs(Player.Character:GetChildren()) do
+                    if(v.ClassName == "Accessory") then v:destroy() end;
+                    if(v.Name:find("Armor")) then v.Mesh:destroy() end;
+                    if(v.Name:find("Helmet")) then v:destroy() end;
+                end;
+            end
+        });
+
+        HacksSection:AddButton({
+            Name = "Anti-Riot Shield",
+            Callback = function ()
+                while true do
+                    wait(0);
+                    for k,v in pairs(Players:GetChildren()) do
+                        if(v.Name ~= Player.Name) then
+                            for _,l in pairs(Workspace[v.Name]:GetChildren()) do
+                                if(l.Name == "SRiot Shield" or l.Name == "Riot Shield") then l:destroy(); end;
+                            end;
+                        end;
+                    end;
+                end;
+            end    
+        })
+
+        HacksSection:AddButton({
+            Name = "Infinite Ammo and NoReload",
+            Callback = function ()
+                ReplicatedStorage.BulletFireSystem.GunReload:destroy();
+                local gunReload = Instance.new("Part");
+                gunReload.Name = "GunReload";
+                gunReload.Parent = ReplicatedStorage.BulletFireSystem;
+                while true do
+                    wait(0);
+                    for _,v in pairs(Player.Character:GetChildren()) do
+                        if(v.ClassName == "Tool") then v.ACS_Modulo.Variaveis.Ammo.Value = 9999; end;
+                    end;
+                end;
+            end    
+        });
+
+        HacksSection:AddSlider({
+            Name = "SpeedHack",
+            Min = 5,
+            Max = 100,
+            Default = 25,
+            Color = Color3.fromRGB(255,255,255),
+            Increment = 1,
+            Callback = function (value)
+                speedHackValue = value;
+            end    
+        });
+
+        TycoonsSection:AddButton({
+            Name = "Your Base ("..game.Players.LocalPlayer.leaderstats.Team.Value..")",
+            Callback = function ()
+                Player.Character.HumanoidRootPart.CFrame = Workspace.Tycoon.Tycoons[game.Players.LocalPlayer.leaderstats.Team.Value].Essentials:WaitForChild("Rebirth Unlocks"):FindFirstChild("1").Hologram.anchoredPart.CFrame;--.Spawn.CFrame;
+                Player.Character.HumanoidRootPart.CFrame = Workspace.Tycoon.Tycoons[game.Players.LocalPlayer.leaderstats.Team.Value].EssentialsSpawn.CFrame
+            end
+        });
+
+        TycoonsSection:AddButton({
+            Name = "Create a part",
+            Callback = function ()
+                _G.tppartv2 = Instance.new("Part")
+                _G.tppartv2.Name = "tppartv22"
+                _G.tppartv2.Parent = Workspace.Tycoon.Tycoons[game.Players.LocalPlayer.leaderstats.Team.Value].Essentials
+                _G.tppartv2.Anchored = true
+                _G.tppartv2.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+                _G.tppartv2.CanCollide = false
+            end
+        });
+
+        TycoonsSection:AddButton({
+            Name = "Remove TP parts",
+            Callback = function ()
+                for i, v in pairs(Workspace.Tycoon.Tycoons[game.Players.LocalPlayer.leaderstats.Team.Value].Essentials:GetChildren()) do
+                    if v:IsA("Part") and v.Name == "tppartv22" then v:Destroy() end
+                    if v:IsA("Part") and v.Name == "tppartv2" then v:Destroy() end
+                    if v:IsA("Part") and v.Name == "tppart" then v:Destroy() end
+                end
+            end
+        });
+
+        TycoonsSection:AddButton({
+            Name = "TP to button",
+            Callback = function ()
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Workspace.Tycoon.Tycoons[game.Players.LocalPlayer.leaderstats.Team.Value].Essentials:FindFirstChild("tppartv22").CFrame
+            end
+        });
+
+        for _, v in pairs({"Alpha","Bravo","Charlie","Delta","Echo","Foxtrot","Kilo","Lima","Omega","Tango","Victor","Zulu"}) do
+            if(v ~= Player.leaderstats.Team.Value) then
+                TycoonsSection:AddButton({
+                    Name = v,
+                    Callback = function ()
+                        Player.Character.HumanoidRootPart.CFrame = Workspace.Tycoon.Tycoons[v].Essentials.Spawn.CFrame;
+                    end 
+                });
+            end;
+        end;
+
+        TeleportsTab:AddButton({
+            Name = "Capture Point",
+            Callback = function ()
+                Player.Character.HumanoidRootPart.CFrame = Workspace.Beams.CapturePoint1.CFrame;
+            end
+        });
+
+        TeleportsTab:AddButton({
+            Name = "Oil Barrel",
+            Callback = function ()
+                for _, v in pairs(Workspace.Beams:GetChildren()) do
+                    if(v.Name:find("Warehouse")) then
+                        Player.Character.HumanoidRootPart.CFrame = Workspace.Beams[v.Name].CFrame;
+                        break;
+                    end;
+                end;
+            end
+        });
+
+        TeleportsTab:AddButton({
+            Name = "AirDrop",
+            Callback = function ()
+                for _,v in pairs(Workspace.Beams:GetChildren()) do
+                    if(v.Name:find("Airdrop_")) then Player.Character.HumanoidRootPart.CFrame = v.CFrame; end;
+                end;
+            end
+        });
+
+        TeleportsTab:AddButton({
+            Name = "Vehicle Crate",
+            Callback = function ()
+                Player.Character.HumanoidRootPart.CFrame = CFrame.new(Workspace.Beams.VehicleCrate.Position.X, Workspace.Beams.VehicleCrate.Position.Y + 20, Workspace.Beams.VehicleCrate.Position.Z);
+            end
+        });
+
+        local playersTable = {};
+
+        for _,v in pairs(Workspace:GetChildren()) do
+            for z, d in pairs(v:GetChildren()) do
+                if(v.Name ~= Player.Name and d.Name == "Humanoid") then table.insert(playersTable, v.Name.." ("..Players[v.Name].leaderstats.Team.Value..")"); end;
+            end;
+        end;
+
+        local playerDropdown = TeleportsTab:AddDropdown({
+            Name = "Players",
+            Options = playersTable,
+            Callback = function (v)
+                Player.Character.HumanoidRootPart.CFrame = Workspace[v].Head.CFrame;
+            end
+        });
+
+        OrionLib:Init();
+
+        local function getSpeedHackValue ()
+            return speedHackValue;
+        end;
+
+        while true do
+            wait(0);
+            Workspace[Player.Name].Humanoid.WalkSpeed = getSpeedHackValue();
+            playersTable = {};
+            for _,v in pairs(Workspace:GetChildren()) do
+                for z, d in pairs(v:GetChildren()) do
+                    if(v.Name ~= Player.Name and d.Name == "Humanoid") then
+                        for b, a in pairs(Players[v.Name]:GetChildren()) do
+                            if(a.Name == "leaderstats") then table.insert(playersTable, v.Name.." ("..a.Team.Value..")"); end;
+                        end;
+                    end;
+                end;
+            end;
+            playerDropdown:Refresh(playersTable, true);
+        end;
+    end)
+    else    
     warn("GAME UNSUPPORTED")   
     warn("GAME UNSUPPORTED")  
     warn("GAME UNSUPPORTED")  
