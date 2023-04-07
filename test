@@ -1,5 +1,4 @@
 --loadstring(game:HttpGet("https://raw.githubusercontent.com/Simoniko/KangarooSSWithPIN/main/x64/Release/s?token=GHSAT0AAAAAAB7TISOBMEFQAN7S63NDSHUQZBFT7WA")()
-
 local c = false
 local ct
 local key = loadstring(game:HttpGet("https://raw.githubusercontent.com/Simoniko/de213/main/st"))()
