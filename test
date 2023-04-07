@@ -22,7 +22,6 @@ for i, v in pairs(key) do
     end
 
 end
-
 _G.OnShop = true
 _G.UpdateStars = true
 
