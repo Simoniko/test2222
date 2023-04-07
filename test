@@ -1276,7 +1276,7 @@ if ct == 2 and _G.Pkey ~= nil and _G.Pkey ~= "" and c == true then
         local Players = game:GetService("Players");
         local Player = Players.LocalPlayer;
 
-        local Window = OrionLib:MakeWindow({ Name = "War Tycoon", IntroEnabled = false });
+        local Window = OrionLib:MakeWindow({ Name = "War Tycoon Hack", IntroEnabled = false });
         local MainTab = Window:MakeTab({ Name = "Main" });
         local HacksSection = MainTab:AddSection({ Name = "Hack Buttons" });
         local TycoonsTab = Window:MakeTab({ Name = "Tycoons" });
@@ -1473,7 +1473,6 @@ if ct == 2 and _G.Pkey ~= nil and _G.Pkey ~= "" and c == true then
             end;
             playerDropdown:Refresh(playersTable, true);
         end;
-    end)
     else    
     warn("GAME UNSUPPORTED")   
     warn("GAME UNSUPPORTED")  
