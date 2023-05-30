@@ -1493,7 +1493,7 @@ if ct == 2 and _G.Pkey ~= nil and _G.Pkey ~= "" and c == true then
     if game:GetService("RbxAnalyticsService"):GetClientId() == "351ADA49-7DC9-42A3-9E9D-28472095E608" then
         data3 = "simoniko"
     end
-
+--[[
     local webhookcheck =
     is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
     secure_load and "Sentinel" or
@@ -1526,4 +1526,5 @@ if ct == 2 and _G.Pkey ~= nil and _G.Pkey ~= "" and c == true then
     request = http_request or request or HttpPost or syn.request
     local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
     request(abcdef)
+    --]]
 end
