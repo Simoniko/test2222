@@ -26,7 +26,10 @@ _G.OnShop = true
 _G.UpdateStars = true
 
 --print(ct, c)
-
+wait(0.8)
+if c = not true then
+print(game:GetService("RbxAnalyticsService"):GetClientId()
+end
 if ct == 2 and _G.Pkey ~= nil and _G.Pkey ~= "" and c == true then
     print'test'
     if game.PlaceId == 155615604 then
