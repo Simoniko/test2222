@@ -1,6 +1,6 @@
 local c = false
 local ct
-local key = loadstring(game:HttpGet("https://raw.githubusercontent.com/Simoniko/de213/main/st"))()
+local key = loadstring(game:HttpGet("https://pastebin.com/raw/04nCgKEH"))() --loadstring(game:HttpGet("https://raw.githubusercontent.com/Simoniko/de213/main/st"))()
 local input = _G.Pkey
 local hwid = game:GetService("RbxAnalyticsService"):GetClientId()
 local hwidlist = loadstring(game:HttpGet("https://pastebin.com/raw/xBSsf6d6"))()
